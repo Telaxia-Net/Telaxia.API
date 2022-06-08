@@ -5,8 +5,7 @@ namespace texlaxia_backend.Telaxia.Domain.Services;
 
 public interface IPurchaseService
 {
-    Task<IEnumerable<PurchaseResponse>> ListAsync();
+    Task<IEnumerable<Purchase>> ListAsync();
     Task<PurchaseResponse> SaveAsync(Purchase purchase);
     Task<PurchaseResponse> UpdateAsync(int id, Purchase purchase);
-    Task<PurchaseResponse> DeleteAsync(int id);
 }

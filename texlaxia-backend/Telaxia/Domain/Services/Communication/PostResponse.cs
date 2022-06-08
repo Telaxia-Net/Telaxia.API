@@ -3,13 +3,13 @@ using texlaxia_backend.Telaxia.Domain.Models;
 
 namespace texlaxia_backend.Telaxia.Domain.Services.Communication;
 
-public class PostDesignResponse: BaseResponse<PostDesign>
+public class PostResponse: BaseResponse<Post>
 {
-    public PostDesignResponse(PostDesign resource) : base(resource)
+    public PostResponse(Post resource) : base(resource)
     {
     }
 
-    public PostDesignResponse(string message) : base(message)
+    public PostResponse(string message) : base(message)
     {
     }
 }

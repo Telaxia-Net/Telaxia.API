@@ -1,22 +1,23 @@
-﻿namespace texlaxia_backend.Shared.Domain.Services.Communication
+﻿namespace texlaxia_backend.Shared.Domain.Services.Communication;
+public abstract class BaseResponse<T>
 {
-    public class BaseResponse<T>
+    protected BaseResponse(T resource)
     {
-        protected BaseResponse(T resource)
-        {
-            Success = true;
-            Resource = resource;
-            Message = string.Empty;
+        Success = true;
+        Resource = resource;
+        Message = string.Empty;
         
-        }
-        protected BaseResponse(string message)
-        {
-            Success = false;
-            Resource = default;
-            Message = message;
-        }
-        public bool Success { get; private set; }
-        public string Message { get; private set; }
-        public T Resource { get; private set; }
     }
+
+
+    protected BaseResponse(string message)
+    {
+        Success = false;
+        Resource = default;
+        Message = message;
+    }
+
+    public bool Success { get; private set; }
+    public string Message { get; private set; }
+    public T Resource { get; private set; }
 }

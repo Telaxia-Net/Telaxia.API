@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\CALEB\\telaxia-backend-page\\texlaxia-backend\\texlaxia-backend.csproj": {}
+    "E:\\Desktop\\2022-1\\Web Applications\\Telaxia\\Backend\\Renato\\gitclone\\telaxia-backend-page\\texlaxia-backend\\texlaxia-backend.csproj": {}
   },
   "projects": {
-    "C:\\CALEB\\telaxia-backend-page\\texlaxia-backend\\texlaxia-backend.csproj": {
+    "E:\\Desktop\\2022-1\\Web Applications\\Telaxia\\Backend\\Renato\\gitclone\\telaxia-backend-page\\texlaxia-backend\\texlaxia-backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\CALEB\\telaxia-backend-page\\texlaxia-backend\\texlaxia-backend.csproj",
+        "projectUniqueName": "E:\\Desktop\\2022-1\\Web Applications\\Telaxia\\Backend\\Renato\\gitclone\\telaxia-backend-page\\texlaxia-backend\\texlaxia-backend.csproj",
         "projectName": "texlaxia-backend",
-        "projectPath": "C:\\CALEB\\telaxia-backend-page\\texlaxia-backend\\texlaxia-backend.csproj",
-        "packagesPath": "C:\\Users\\DARH\\.nuget\\packages\\",
-        "outputPath": "C:\\CALEB\\telaxia-backend-page\\texlaxia-backend\\obj\\",
+        "projectPath": "E:\\Desktop\\2022-1\\Web Applications\\Telaxia\\Backend\\Renato\\gitclone\\telaxia-backend-page\\texlaxia-backend\\texlaxia-backend.csproj",
+        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+        "outputPath": "E:\\Desktop\\2022-1\\Web Applications\\Telaxia\\Backend\\Renato\\gitclone\\telaxia-backend-page\\texlaxia-backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\DARH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -44,6 +44,10 @@
               "target": "Package",
               "version": "[11.0.1, )"
             },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.5, )"
@@ -61,6 +65,10 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[6.0.5, )"
+            },
+            "MySql.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.1, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -85,7 +93,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

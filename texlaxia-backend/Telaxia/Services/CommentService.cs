@@ -1,8 +1,11 @@
-﻿using texlaxia_backend.Telaxia.Domain.Models;
+﻿
 using texlaxia_backend.Shared.Domain.Repositories;
+using texlaxia_backend.Telaxia.Domain.Models;
 using texlaxia_backend.Telaxia.Domain.Repositories;
 using texlaxia_backend.Telaxia.Domain.Services;
 using texlaxia_backend.Telaxia.Domain.Services.Communication;
+
+using System.Threading.Tasks;
 
 namespace texlaxia_backend.Telaxia.Services;
 
@@ -18,24 +21,67 @@ public class CommentService: ICommentService
         _unitOfWork = unitOfWork;
     }
 
-    public /*async*/ Task<IEnumerable<CommentResponse>> ListAsync()
+    public async Task<IEnumerable<Comment>> ListAsync()
     {
-        //return await _commentRepository.ListAsync();
-        throw new NotImplementedException();
+        return await _commentRepository.ListAsync();
     }
 
-    public Task<CommentResponse> SaveAsync(Comment comment)
+    public async Task<CommentResponse> SaveAsync(Comment comment)
     {
-        throw new NotImplementedException();
+        try
+        {
+            await _commentRepository.AddAsync(comment);
+            await _unitOfWork.CompleteAsync();
+
+            return new CommentResponse(comment);
+        }
+        catch (Exception e)
+        {
+            return new CommentResponse($"An error occurred while saving the Comment: {e.Message}");
+        }
     }
 
-    public Task<CommentResponse> UpdateAsync(int id, Comment comment)
+    public async Task<CommentResponse> UpdateAsync(int id, Comment comment)
     {
-        throw new NotImplementedException();
+        var existingComment = await _commentRepository.FindByIdAsync(id);
+
+        if (existingComment == null)
+            return new CommentResponse("Comment not found.");
+
+        existingComment.body = comment.body;
+        existingComment.date = comment.date;
+        
+        try
+        {
+            _commentRepository.Update(existingComment);
+            await _unitOfWork.CompleteAsync();
+            
+            return new CommentResponse(existingComment);
+        }
+        catch (Exception e)
+        {
+            return new CommentResponse($"An error occurred while updating the Comment: {e.Message}");
+        }
     }
 
-    public Task<CommentResponse> DeleteAsync(int id)
+    public async Task<CommentResponse> DeleteAsync(int id)
     {
-        throw new NotImplementedException();
+        var existingComment = await _commentRepository.FindByIdAsync(id);
+
+        if (existingComment == null)
+            return new CommentResponse("Comment not found.");
+
+        try
+        {
+            _commentRepository.Remove(existingComment);
+            await _unitOfWork.CompleteAsync();
+
+            return new CommentResponse(existingComment);
+        }
+        catch (Exception e)
+        {
+            // Do some logging stuff
+            return new CommentResponse($"An error occurred while deleting the Comment: {e.Message}");
+        }
     }
 }

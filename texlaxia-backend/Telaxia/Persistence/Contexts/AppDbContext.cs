@@ -63,7 +63,7 @@ public class AppDbContext:DbContext
         builder.Entity<DesignCollaborator>().Property(p => p.Name).HasMaxLength(300);
         
         //Designer
-        builder.Entity<Designer>().ToTable("DesignCollaborators");
+        builder.Entity<Designer>().ToTable("Designer");
         builder.Entity<Designer>().HasKey(p => p.UserId);
         builder.Entity<Designer>().Property(p=>p.UserId).IsRequired();
         
