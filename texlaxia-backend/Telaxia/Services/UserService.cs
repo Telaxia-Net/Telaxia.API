@@ -38,7 +38,7 @@ public class UserService:IUserService
         }
     }
 
-    public async Task<UserResponse> UpdateAsyncData(int id, User user)
+    public async Task<UserResponse> UpdateAsync(int id, User user)
     {
         var existingUser = await _userRepository.FindByIdAsync(id);
 

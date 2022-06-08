@@ -10,7 +10,7 @@ public class ModelToResourceProfile : AutoMapper.Profile
     {
         CreateMap<Comment, CommentResource>();
         CreateMap<DesignCollaborator, DesignCollaboratorResource>();
-        CreateMap<PostDesign, PostDesignResource>();
+        CreateMap<PostDesign, PostResource>();
         CreateMap<Purchase, PurchaseResource>();
         CreateMap<User, UserResource>();
     }

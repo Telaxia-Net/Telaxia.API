@@ -10,7 +10,7 @@ public class ResourceToModelProfile : Profile
     {
         CreateMap<SaveCommentResource, Comment>();
         CreateMap<SaveDesignCollaboratorResource, DesignCollaborator>();
-        CreateMap<SavePostDesignResource, PostDesign>();
+        CreateMap<SavePostResource, PostDesign>();
         CreateMap<SavePurchaseResource, Purchase>();
         CreateMap<SaveUserResource, User>();
     }
