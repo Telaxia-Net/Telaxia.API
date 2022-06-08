@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Desktop\\2022-1\\Web Applications\\Telaxia\\Backend\\Renato\\texlaxia-backend\\texlaxia-backend\\texlaxia-backend.csproj": {}
+    "C:\\CALEB\\telaxia-backend-page\\texlaxia-backend\\texlaxia-backend.csproj": {}
   },
   "projects": {
-    "E:\\Desktop\\2022-1\\Web Applications\\Telaxia\\Backend\\Renato\\texlaxia-backend\\texlaxia-backend\\texlaxia-backend.csproj": {
+    "C:\\CALEB\\telaxia-backend-page\\texlaxia-backend\\texlaxia-backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Desktop\\2022-1\\Web Applications\\Telaxia\\Backend\\Renato\\texlaxia-backend\\texlaxia-backend\\texlaxia-backend.csproj",
+        "projectUniqueName": "C:\\CALEB\\telaxia-backend-page\\texlaxia-backend\\texlaxia-backend.csproj",
         "projectName": "texlaxia-backend",
-        "projectPath": "E:\\Desktop\\2022-1\\Web Applications\\Telaxia\\Backend\\Renato\\texlaxia-backend\\texlaxia-backend\\texlaxia-backend.csproj",
-        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "E:\\Desktop\\2022-1\\Web Applications\\Telaxia\\Backend\\Renato\\texlaxia-backend\\texlaxia-backend\\obj\\",
+        "projectPath": "C:\\CALEB\\telaxia-backend-page\\texlaxia-backend\\texlaxia-backend.csproj",
+        "packagesPath": "C:\\Users\\DARH\\.nuget\\packages\\",
+        "outputPath": "C:\\CALEB\\telaxia-backend-page\\texlaxia-backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DARH\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -85,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

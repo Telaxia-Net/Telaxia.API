@@ -5,6 +5,10 @@
         public int Id { get; set; }
         public string Name { get; set; }
         public int Price { get; set; }
-        public User User { get; set; }
+        
+        public string Description { get; set; }
+        
+        //Relationship one to many
+        public List<User> Users { get; set; } = new List<User>();
     }
 }

@@ -1,15 +1,12 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
-using Telaxia_Backend.Telaxia.Domain.Models;
+﻿using Telaxia_Backend.Telaxia.Domain.Models;
 
-namespace Telaxia_Backend.Telaxia.Domain.Repositories
+namespace texlaxia_backend.Telaxia.Domain.Repositories;
+
+public interface IUserRepository
 {
-    public interface IUserRepository
-    {
-        Task<IEnumerable<User>> ListAsync();
-        Task AddAsync(User user);
-        Task<User> FindById(int id);
-        void Remove(User user);
-        void Update(User user);
-    }
+    Task<IEnumerable<User>> ListAsync();
+    Task AddAsync(User user);
+    Task<User> FindByIdAsync(int id);
+    void Update(User user);
+    void Remove(User user);
 }

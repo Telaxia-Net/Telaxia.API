@@ -6,13 +6,19 @@ namespace Telaxia_Backend.Telaxia.Domain.Models
     {
         public int Id { get; set; }
         public int PostLike { get; set; }
-        //RelationShip
-        public Information Information;
-        public int DatePostedId { get; set; }
-        public Date DatePosted { get; set; }
-        public int ProfileId { get; set; }
-        public Profile Profile { get; set; }
-        public int DesignId { get; set; }
-        public Design Design { get; set; }
+        
+        public string Description { get; set; }
+        
+        public string Title { get; set; }
+        
+        public Designer Designer { get; set; }
+        
+        public int DesignerId { get; set; }
+        
+        //Relationship one to many
+        public List<Comment> Comments { get; set; } = new List<Comment>();
+        
+        //Relationship one to many
+        public List<PostDesign> PostDesigns { get; set; } = new List<PostDesign>();
     }
 }
