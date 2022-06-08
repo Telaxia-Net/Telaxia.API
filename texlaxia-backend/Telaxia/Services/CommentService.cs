@@ -26,6 +26,16 @@ public class CommentService: ICommentService
         return await _commentRepository.ListAsync();
     }
 
+    public async Task<IEnumerable<Comment>> ListByCategoryIdAsync(int commentId)
+    {
+        return await _commentRepository.FindByCommentIdAsync(commentId);
+    }
+
+    public async Task<IEnumerable<Comment>> ListByCommentIdAsync(int commentId)
+    {
+        return await _commentRepository.FindByCommentIdAsync(commentId);
+    }
+
     public async Task<CommentResponse> SaveAsync(Comment comment)
     {
         try

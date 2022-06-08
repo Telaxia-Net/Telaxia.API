@@ -26,6 +26,11 @@ public class CommentRepository:BaseRepository, ICommentRepository
         return await _context.Comments.FindAsync(id);
     }
 
+    public Task<IEnumerable<Comment>> FindByCommentIdAsync(int id)
+    {
+        throw new NotImplementedException();
+    }
+
     public void Update(Comment comment)
     {
         _context.Comments.Update(comment);
