@@ -1,6 +1,4 @@
-﻿using Telaxia_Backend.Controllers;
-
-namespace Telaxia_Backend.Telaxia.Domain.Models;
+﻿namespace texlaxia_backend.Telaxia.Domain.Models;
 
 public class Collaborator
 {

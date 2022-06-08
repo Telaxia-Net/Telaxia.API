@@ -1,15 +1,12 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
-using Telaxia_Backend.Telaxia.Domain.Models;
-using Telaxia_Backend.Telaxia.Domain.Services.Communication;
+﻿using texlaxia_backend.Telaxia.Domain.Models;
+using texlaxia_backend.Telaxia.Domain.Services.Communication;
 
-namespace Telaxia_Backend.Telaxia.Domain.Services
+namespace texlaxia_backend.Telaxia.Domain.Services;
+
+public interface IUserService
 {
-    public interface IUserService
-    {
-        Task<IEnumerable<User>> ListAsync();
-        Task<UserResponse> SaveAsync(User user);
-        Task<UserResponse> UpdateAsync(int id, User user);
-        Task<UserResponse> DeleteAsync(int id);
-    }
+    Task<IEnumerable<UserResponse>> ListAsync();
+    Task<UserResponse> SaveAsync(User designCollaborator);
+    Task<UserResponse> UpdateAsync(int id, User designCollaborator);
+    Task<UserResponse> DeleteAsync(int id);
 }

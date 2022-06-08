@@ -1,18 +1,16 @@
-﻿using Telaxia_Backend.Telaxia.Domain.Models;
-using Telaxia_Backend.Telaxia.Domain.Services.Communication;
+﻿using texlaxia_backend.Telaxia.Domain.Models;
+using texlaxia_backend.Telaxia.Domain.Services.Communication;
 
-public class ModelToResourceProfile:AutoMapper.Profile
+namespace texlaxia_backend.Telaxia.Mapping;
+
+public class ModelToResourceProfile : AutoMapper.Profile
 {
     public ModelToResourceProfile()
     {
-        CreateMap<Cooperative, CooperativeResponse>();
-        CreateMap<Date, DateResponse>();
-        CreateMap<Design, DesignResponse>();
-        CreateMap<Information, InformationResponse>();
-        CreateMap<Plan, PlanResponse>();
-        CreateMap<Post, PostResponse>();
-        CreateMap<Profile, ProfileResponse>();
+        CreateMap<Comment, CommentResponse>();
+        CreateMap<DesignCollaborator, DesignCollaboratorResponse>();
+        CreateMap<PostDesign, PostDesignResponse>();
+        CreateMap<Purchase, PurchaseResponse>();
         CreateMap<User, UserResponse>();
-        CreateMap<UserType, UserTypeResponse>();
     }
 }

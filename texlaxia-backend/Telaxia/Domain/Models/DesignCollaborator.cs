@@ -1,4 +1,4 @@
-﻿namespace Telaxia_Backend.Telaxia.Domain.Models;
+﻿namespace texlaxia_backend.Telaxia.Domain.Models;
 
 public class DesignCollaborator
 {
@@ -8,6 +8,6 @@ public class DesignCollaborator
     public Collaborator Collaborator { get; set; }
     public int CollaboratorId { get; set; }
     
-    public string description { get; set; }
-    public string name { get; set; }
+    public string Description { get; set; }
+    public string Name { get; set; }
 }

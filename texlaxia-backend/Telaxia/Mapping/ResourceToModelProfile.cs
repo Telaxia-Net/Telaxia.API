@@ -1,10 +1,8 @@
-﻿using Telaxia_Backend.Telaxia.Domain.Models;
-using Telaxia_Backend.Telaxia.Domain.Services.Communication;
-using Profile = AutoMapper.Profile;
+﻿using Profile = AutoMapper.Profile;
 
-namespace Telaxia_Backend.Telaxia.Mapping;
+namespace texlaxia_backend.Telaxia.Mapping;
 
-public class ResourceToModelProfile:Profile
+public class ResourceToModelProfile : Profile
 {
-   
+    
 }

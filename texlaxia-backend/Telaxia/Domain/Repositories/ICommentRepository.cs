@@ -1,4 +1,4 @@
-﻿using Telaxia_Backend.Telaxia.Domain.Models;
+﻿using texlaxia_backend.Telaxia.Domain.Models;
 
 namespace texlaxia_backend.Telaxia.Domain.Repositories;
 

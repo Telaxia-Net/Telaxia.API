@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using Telaxia_Backend.Telaxia.Persistence.Contexts;
+using texlaxia_backend.Telaxia.Persistence.Contexts;
 
 var builder = WebApplication.CreateBuilder(args);
 

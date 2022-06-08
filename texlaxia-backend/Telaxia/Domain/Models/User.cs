@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Telaxia_Backend.Telaxia.Domain.Models
+namespace texlaxia_backend.Telaxia.Domain.Models
 {
     public class User
     {
@@ -14,6 +14,10 @@ namespace Telaxia_Backend.Telaxia.Domain.Models
         public Plan Plan { get; set; }
         public int PlanId { get; set; }
         
+        public Buyer Buyer { get; set; }
+        
+        public Designer Designer { get; set; }
+                
         //Relationship one to many
         public List<Comment> Comments { get; set; } = new List<Comment>();
     }

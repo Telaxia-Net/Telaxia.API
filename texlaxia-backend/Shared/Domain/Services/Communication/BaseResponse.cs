@@ -1,4 +1,4 @@
-﻿namespace Telaxia_Backend.Shared.Domain.Services.Communication
+﻿namespace texlaxia_backend.Shared.Domain.Services.Communication
 {
     public class BaseResponse<T>
     {

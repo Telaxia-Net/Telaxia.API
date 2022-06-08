@@ -2,7 +2,7 @@
 using System.Net.Mime;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
-namespace Telaxia_Backend.Telaxia.Domain.Models;
+namespace texlaxia_backend.Telaxia.Domain.Models;
 
 public class Design
 {
@@ -12,9 +12,9 @@ public class Design
     
     public int DesignerId { get; set; }
 
-    public String DesignViewUrl { get; set; }
+    public string DesignViewUrl { get; set; }
     
-    //public DataType.Image ImageDesign { get; set; }
+    public string ImageDesign { get; set; }
     
     public bool Visibility { get; set; }
     
