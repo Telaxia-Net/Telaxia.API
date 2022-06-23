@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Desktop\\2022-1\\Web Applications\\Telaxia\\Backend\\Renato\\gitclone\\telaxia-backend-page\\texlaxia-backend\\texlaxia-backend.csproj": {}
+    "G:\\University\\Ciclo V\\Aplicacion Web\\TF\\github\\Telaxia.API\\texlaxia-backend\\texlaxia-backend.csproj": {}
   },
   "projects": {
-    "E:\\Desktop\\2022-1\\Web Applications\\Telaxia\\Backend\\Renato\\gitclone\\telaxia-backend-page\\texlaxia-backend\\texlaxia-backend.csproj": {
+    "G:\\University\\Ciclo V\\Aplicacion Web\\TF\\github\\Telaxia.API\\texlaxia-backend\\texlaxia-backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Desktop\\2022-1\\Web Applications\\Telaxia\\Backend\\Renato\\gitclone\\telaxia-backend-page\\texlaxia-backend\\texlaxia-backend.csproj",
+        "projectUniqueName": "G:\\University\\Ciclo V\\Aplicacion Web\\TF\\github\\Telaxia.API\\texlaxia-backend\\texlaxia-backend.csproj",
         "projectName": "texlaxia-backend",
-        "projectPath": "E:\\Desktop\\2022-1\\Web Applications\\Telaxia\\Backend\\Renato\\gitclone\\telaxia-backend-page\\texlaxia-backend\\texlaxia-backend.csproj",
-        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "E:\\Desktop\\2022-1\\Web Applications\\Telaxia\\Backend\\Renato\\gitclone\\telaxia-backend-page\\texlaxia-backend\\obj\\",
+        "projectPath": "G:\\University\\Ciclo V\\Aplicacion Web\\TF\\github\\Telaxia.API\\texlaxia-backend\\texlaxia-backend.csproj",
+        "packagesPath": "C:\\Users\\erikr\\.nuget\\packages\\",
+        "outputPath": "G:\\University\\Ciclo V\\Aplicacion Web\\TF\\github\\Telaxia.API\\texlaxia-backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\erikr\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -69,6 +69,10 @@
             "MySql.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.1, )"
+            },
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[2.1.10, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

@@ -531,6 +531,15 @@
           "lib/net6.0/MySql.EntityFrameworkCore.dll": {}
         }
       },
+      "MySqlConnector/2.1.10": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/MySqlConnector.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/MySqlConnector.dll": {}
+        }
+      },
       "Swashbuckle.AspNetCore/6.2.3": {
         "type": "package",
         "dependencies": {
@@ -1766,6 +1775,35 @@
         "mysql.entityframeworkcore.nuspec"
       ]
     },
+    "MySqlConnector/2.1.10": {
+      "sha512": "aVvetx5uRWlfnxXlbybf4t6plnH5IGrXSue8R2ZsBOAH8VfS1GuNYqQ4KREVAzN7JexPbhf41btg8pv34eBTrA==",
+      "type": "package",
+      "path": "mysqlconnector/2.1.10",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net45/MySqlConnector.dll",
+        "lib/net45/MySqlConnector.xml",
+        "lib/net461/MySqlConnector.dll",
+        "lib/net461/MySqlConnector.xml",
+        "lib/net471/MySqlConnector.dll",
+        "lib/net471/MySqlConnector.xml",
+        "lib/net5.0/MySqlConnector.dll",
+        "lib/net5.0/MySqlConnector.xml",
+        "lib/net6.0/MySqlConnector.dll",
+        "lib/net6.0/MySqlConnector.xml",
+        "lib/netcoreapp3.1/MySqlConnector.dll",
+        "lib/netcoreapp3.1/MySqlConnector.xml",
+        "lib/netstandard2.0/MySqlConnector.dll",
+        "lib/netstandard2.0/MySqlConnector.xml",
+        "lib/netstandard2.1/MySqlConnector.dll",
+        "lib/netstandard2.1/MySqlConnector.xml",
+        "logo.png",
+        "mysqlconnector.2.1.10.nupkg.sha512",
+        "mysqlconnector.nuspec"
+      ]
+    },
     "Swashbuckle.AspNetCore/6.2.3": {
       "sha512": "cnzQDn0Le+hInsw2SYwlOhOCPXpYi/szcvnyqZJ12v+QyrLBwAmWXBg6RIyHB18s/mLeywC+Rg2O9ndz0IUNYQ==",
       "type": "package",
@@ -2395,23 +2433,24 @@
       "Microsoft.EntityFrameworkCore.Relational >= 6.0.5",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.5",
       "MySql.EntityFrameworkCore >= 6.0.1",
+      "MySqlConnector >= 2.1.10",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Lenovo\\.nuget\\packages\\": {}
+    "C:\\Users\\erikr\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Desktop\\2022-1\\Web Applications\\Telaxia\\Backend\\Renato\\gitclone\\telaxia-backend-page\\texlaxia-backend\\texlaxia-backend.csproj",
+      "projectUniqueName": "G:\\University\\Ciclo V\\Aplicacion Web\\TF\\github\\Telaxia.API\\texlaxia-backend\\texlaxia-backend.csproj",
       "projectName": "texlaxia-backend",
-      "projectPath": "E:\\Desktop\\2022-1\\Web Applications\\Telaxia\\Backend\\Renato\\gitclone\\telaxia-backend-page\\texlaxia-backend\\texlaxia-backend.csproj",
-      "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-      "outputPath": "E:\\Desktop\\2022-1\\Web Applications\\Telaxia\\Backend\\Renato\\gitclone\\telaxia-backend-page\\texlaxia-backend\\obj\\",
+      "projectPath": "G:\\University\\Ciclo V\\Aplicacion Web\\TF\\github\\Telaxia.API\\texlaxia-backend\\texlaxia-backend.csproj",
+      "packagesPath": "C:\\Users\\erikr\\.nuget\\packages\\",
+      "outputPath": "G:\\University\\Ciclo V\\Aplicacion Web\\TF\\github\\Telaxia.API\\texlaxia-backend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\erikr\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2466,6 +2505,10 @@
           "MySql.EntityFrameworkCore": {
             "target": "Package",
             "version": "[6.0.1, )"
+          },
+          "MySqlConnector": {
+            "target": "Package",
+            "version": "[2.1.10, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",

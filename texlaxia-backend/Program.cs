@@ -20,7 +20,7 @@ builder.Services.AddSwaggerGen();
 //Add Database Connection
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<AppDbContext>(
-    options => options.UseSqlServer(connectionString)
+    options => options.UseMySQL(connectionString)
         .LogTo(Console.WriteLine, LogLevel.Information)
         .EnableSensitiveDataLogging()
         .EnableDetailedErrors());
