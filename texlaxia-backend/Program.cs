@@ -39,6 +39,8 @@ builder.Services.AddScoped<IPostService, PostService>();
 builder.Services.AddScoped<IPurchaseRepository, PurchaseRepository>();
 builder.Services.AddScoped<IPurchaseService, PurchaseService>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IPlanService, PlanService>();
+builder.Services.AddScoped<IPlanRepository, PlanRepository>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 

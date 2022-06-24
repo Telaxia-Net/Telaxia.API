@@ -13,5 +13,6 @@ public class ResourceToModelProfile : Profile
         CreateMap<SavePostResource, PostDesign>();
         CreateMap<SavePurchaseResource, Purchase>();
         CreateMap<SaveUserResource, User>();
+        CreateMap<SavePlanResource, Plan>();
     }
 }
