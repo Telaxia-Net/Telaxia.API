@@ -11,6 +11,7 @@ public class ResourceToModelProfile : Profile
         CreateMap<SaveCommentResource, Comment>();
         CreateMap<SaveDesignCollaboratorResource, DesignCollaborator>();
         CreateMap<SavePostResource, PostDesign>();
+        CreateMap<SavePostResource, Post>();
         CreateMap<SavePurchaseResource, Purchase>();
         CreateMap<SaveUserResource, User>();
         CreateMap<SavePlanResource, Plan>();

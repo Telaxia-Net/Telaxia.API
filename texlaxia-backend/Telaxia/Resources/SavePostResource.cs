@@ -7,4 +7,6 @@ public class SavePostResource
     public string Description { get; set; }
         
     public string Title { get; set; }
+    
+    public int DesignerId { get; set; }
 }
