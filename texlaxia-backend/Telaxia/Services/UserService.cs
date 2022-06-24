@@ -49,6 +49,7 @@ public class UserService:IUserService
         existingUser.LastName = user.LastName;
         existingUser.Phone = user.Phone;
         existingUser.Mail = user.Mail;
+        existingUser.Rating = user.Rating;
 
         try
         {
@@ -60,27 +61,6 @@ public class UserService:IUserService
         catch (Exception e)
         {
             return new UserResponse($"An error occurred while updating the user: {e.Message}");
-        }
-    }
-    public async Task<UserResponse> UpdateAsyncRating(int id, User category)
-    {
-        var existingUser = await _userRepository.FindByIdAsync(id);
-
-        if (existingUser == null)
-            return new UserResponse("Category not found.");
-
-        existingUser.Rating = category.Rating;
-
-        try
-        {
-            _userRepository.Update(existingUser);
-            await _unitOfWork.CompleteAsync();
-            
-            return new UserResponse(existingUser);
-        }
-        catch (Exception e)
-        {
-            return new UserResponse($"An error occurred while updating the User: {e.Message}");
         }
     }
     public async Task<UserResponse> DeleteAsync(int id)

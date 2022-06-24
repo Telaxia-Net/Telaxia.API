@@ -1,7 +1,9 @@
 ﻿namespace texlaxia_backend.Telaxia.Resources;
 
-public class SaveDesignResource
+public class DesignResource
 {
+    public int Id { get; set; }
+
     public int DesignerId { get; set; }
 
     public string DesignViewUrl { get; set; }
@@ -9,4 +11,5 @@ public class SaveDesignResource
     public string ImageDesign { get; set; }
     
     public bool Visibility { get; set; }
+    
 }

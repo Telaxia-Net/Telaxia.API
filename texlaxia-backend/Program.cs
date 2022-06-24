@@ -45,6 +45,8 @@ builder.Services.AddScoped<IBuyerService, BuyerService>();
 builder.Services.AddScoped<IBuyerRepository, BuyerRepository>();
 builder.Services.AddScoped<IDesignerService, DesignerService>();
 builder.Services.AddScoped<IDesignerRepository, DesignerRepository>();
+builder.Services.AddScoped<IDesignService, DesignService>();
+builder.Services.AddScoped<IDesignRepository, DesignRepository>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 

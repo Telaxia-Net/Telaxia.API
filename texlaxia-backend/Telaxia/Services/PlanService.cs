@@ -61,27 +61,6 @@ public class PlanService:IPlanService
             return new PlanResponse($"An error occurred while updating the Plan: {e.Message}");
         }
     }
-    public async Task<PlanResponse> UpdateAsyncRating(int id, Plan category)
-    {
-        var existingPlan = await _planRepository.FindByIdAsync(id);
-
-        if (existingPlan == null)
-            return new PlanResponse("Category not found.");
-
-        existingPlan.Price = category.Price;
-
-        try
-        {
-            _planRepository.Update(existingPlan);
-            await _unitOfWork.CompleteAsync();
-            
-            return new PlanResponse(existingPlan);
-        }
-        catch (Exception e)
-        {
-            return new PlanResponse($"An error occurred while updating the Plan: {e.Message}");
-        }
-    }
     public async Task<PlanResponse> DeleteAsync(int id)
     {
         var existingPlan = await _planRepository.FindByIdAsync(id);
