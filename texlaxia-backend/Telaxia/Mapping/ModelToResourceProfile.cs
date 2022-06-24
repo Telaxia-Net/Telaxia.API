@@ -15,5 +15,7 @@ public class ModelToResourceProfile : AutoMapper.Profile
         CreateMap<Purchase, PurchaseResource>();
         CreateMap<User, UserResource>();
         CreateMap<Plan, PlanResource>();
+        CreateMap<Buyer, BuyerResource>();
+        CreateMap<Designer, DesignerResource>();
     }
 }
