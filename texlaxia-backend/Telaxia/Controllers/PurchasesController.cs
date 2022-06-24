@@ -47,23 +47,4 @@ public class PurchasesController:ControllerBase
         return Ok(purchaseResource);
     }
 
-    [HttpPut("{id}")]
-    public async Task<IActionResult> PutAsync(int id, [FromBody] SavePurchaseResource resource)
-    {
-        if (!ModelState.IsValid)
-            return BadRequest(ModelState.GetErrorMessages());
-
-        var purchase = _mapper.Map<SavePurchaseResource, Purchase>(resource);
-
-        var result = await _purchaseService.UpdateAsync(id, purchase);
-
-        if (!result.Success)
-            return BadRequest(result.Message);
-
-        var purchaseResource = _mapper.Map<Purchase, PurchaseResource>(result.Resource);
-
-        return Ok(purchaseResource);
-    }
-
-
 }

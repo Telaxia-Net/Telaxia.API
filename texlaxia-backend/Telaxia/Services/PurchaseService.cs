@@ -37,26 +37,5 @@ public class PurchaseService:IPurchaseService
             return new PurchaseResponse($"An error occurred while saving the Purchase: {e.Message}");
         }
     }
-
-    public async Task<PurchaseResponse> UpdateAsync(int id, Purchase purchase)
-    {
-        var existingPurchase = await _purchaseRepository.FindByIdAsync(id);
-
-        if (existingPurchase == null)
-            return new PurchaseResponse("Purchase not found.");
-
-        existingPurchase.PayMethod = purchase.PayMethod;
-
-        try
-        {
-            _purchaseRepository.Update(existingPurchase);
-            await _unitOfWork.CompleteAsync();
-            
-            return new PurchaseResponse(existingPurchase);
-        }
-        catch (Exception e)
-        {
-            return new PurchaseResponse($"An error occurred while updating the Purchase: {e.Message}");
-        }
-    }
+    
 }

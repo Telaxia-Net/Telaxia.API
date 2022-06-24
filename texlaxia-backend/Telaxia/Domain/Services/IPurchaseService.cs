@@ -7,5 +7,4 @@ public interface IPurchaseService
 {
     Task<IEnumerable<Purchase>> ListAsync();
     Task<PurchaseResponse> SaveAsync(Purchase purchase);
-    Task<PurchaseResponse> UpdateAsync(int id, Purchase purchase);
 }

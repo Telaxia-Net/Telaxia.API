@@ -6,5 +6,9 @@ public class PurchaseResource
      
     public float Amount { get; set; }
      
-    public int PayMethod { get; set; }
+    public string PayMethod { get; set; }
+    
+    public int DesignId { get; set; }
+    
+    public int BuyerId { get; set; }
 }
