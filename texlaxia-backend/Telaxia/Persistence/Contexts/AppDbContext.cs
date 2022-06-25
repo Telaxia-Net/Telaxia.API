@@ -104,7 +104,7 @@ public class AppDbContext:DbContext
         builder.Entity<User>().Property(p=>p.FirstName).HasMaxLength(40);
         builder.Entity<User>().Property(p=>p.LastName).HasMaxLength(40);
         builder.Entity<User>().Property(p=>p.Phone).HasMaxLength(15);
-        builder.Entity<User>().Property(p=>p.Mail).HasMaxLength(20);
+        builder.Entity<User>().Property(p=>p.Mail).HasMaxLength(200);
         builder.Entity<User>().Property(p=>p.Rating);
 
         /*----------------------- Relationships and Foreignkeys -----------------------*/
