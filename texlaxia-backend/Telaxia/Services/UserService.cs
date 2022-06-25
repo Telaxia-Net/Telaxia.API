@@ -45,6 +45,7 @@ public class UserService:IUserService
         if (existingUser == null)
             return new UserResponse("User not found.");
 
+        existingUser.Password = user.Password;
         existingUser.FirstName = user.FirstName;
         existingUser.LastName = user.LastName;
         existingUser.Phone = user.Phone;
