@@ -89,4 +89,10 @@ public class CommentService: ICommentService
             return new CommentResponse($"An error occurred while deleting the Comment: {e.Message}");
         }
     }
+
+    public async Task<IEnumerable<Comment>> ListByCommentContain(string word)
+    {
+        var existingComments = await _commentRepository.FindByCommentContent(word);
+        return existingComments;
+    }
 }

@@ -8,6 +8,8 @@ public interface ICommentRepository
     Task AddAsync(Comment comment);
     Task<Comment> FindByIdAsync(int id);
     Task<IEnumerable<Comment>> FindByCommentIdAsync(int id);
+
+    Task<IEnumerable<Comment>> FindByCommentContent(string word);
     void Update(Comment comment);
     void Remove(Comment comment);
 }

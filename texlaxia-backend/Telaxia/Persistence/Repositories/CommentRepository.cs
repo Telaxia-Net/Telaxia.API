@@ -35,6 +35,13 @@ public class CommentRepository:BaseRepository, ICommentRepository
             .ToListAsync();
     }
 
+    public async Task<IEnumerable<Comment>> FindByCommentContent(string word)
+    {
+        return await _context.Comments
+            .Where(comment => comment.body.Contains(word))
+            .ToListAsync();
+    }
+
     public void Update(Comment comment)
     {
         _context.Comments.Update(comment);

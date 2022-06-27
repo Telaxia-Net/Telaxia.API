@@ -19,7 +19,14 @@ public class CommentsController:ControllerBase
         _commentService = commentService;
         _mapper = mapper;
     }
-
+    
+    [HttpGet("search/{word}")]
+    public async Task<IEnumerable<CommentResource>> GetCommentByWord(string word)
+    {
+        var comments = await _commentService.ListByCommentContain(word);
+        var resources = _mapper.Map<IEnumerable<Comment>, IEnumerable<CommentResource>>(comments);
+        return resources;
+    }
     [HttpGet]
     public async Task<IEnumerable<CommentResource>> GetAllAsync()
     {
